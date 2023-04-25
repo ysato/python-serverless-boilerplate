@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-serverless-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["ysato <56924527+ysato@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "python_serverless_boilerplate"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+slack-bolt = {extras = ["adapter"], version = "^1.17.2"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

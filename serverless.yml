@@ -1,0 +1,24 @@
+service: python-serverless-boilerplate
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+custom:
+  pythonRequirements:
+    usePoetry: true
+    zip: true
+
+functions:
+  hello:
+    handler: handler.handler
+    events:
+      - http:
+          path: hello
+          method: post
+
+plugins:
+  - serverless-python-requirements
+  - serverless-dotenv-plugin

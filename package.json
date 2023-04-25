@@ -1,0 +1,14 @@
+{
+  "name": "python-serverless-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^3.30.1",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-python-requirements": "^6.0.0"
+  }
+}
